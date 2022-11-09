@@ -1,0 +1,16 @@
+[
+  {
+    "name": "service",
+    "path": "/service",
+    "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/service/index.vue",
+    "chunkName": "pages/service/index",
+    "_name": "_3150a1a7"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_44613b81"
+  }
+]

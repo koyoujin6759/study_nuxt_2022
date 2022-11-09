@@ -1,0 +1,122 @@
+//scss는 전처리기 입니다.
+//보통 CSS Preprocessor 라고 부릅니다.
+
+html,
+body,
+h1,
+input,
+select {
+  font-family: "Apple SD Gothic Neo", arial, sans-serif;
+}
+body,
+h1 {
+  font-size: 14px;
+}
+h1 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.3;
+}
+body {
+  margin: 0;
+  background: #fff;
+  color: #202124;
+}
+a {
+  color: #1a0dab;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+a:visited {
+  color: #609;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+cite,
+cite a:link,
+cite a:visited {
+  color: #202124;
+  font-style: normal;
+}
+
+cite {
+  color: #aaa;
+  font-style: normal;
+
+  a {
+
+    &:link,
+    &:visited {
+      // @extend cite;
+      color: #aaa;
+      font-style: normal;
+    }
+  }
+}
+
+/*
+중첩의 기능을 사용할 수 있습니다.
+상위 선택자의 반복을 피하고 좀 더 편리하게 복잡한 구조를 작성할 수 있습니다.
+중첩 안에서 & 키워드는 상위(부모) 선택자를 참조하여 치환합니다.
+*/
+
+/*
+@extend는 다음과 같은 문제를 고려해야 합니다.
+내 현재 선택자(위 예제의 .btn-danger)가 어디에 첨부될 것인가?
+원치 않는 부작용이 초래될 수도 있는가?
+이 한 번의 확장으로 얼마나 큰 CSS가 생성되는가?
+
+결과적으로 확장(Extend) 기능은 무해하거나 혹은 유익할 수도 있지만 그만큼 부작용을 가지고 있을 수 있습니다.
+따라서 확장은 사용을 권장하지 않으며, 위에서 살펴본 Mixin을 대체 기능으로 사용하세요.
+*/
+
+button {
+  margin: 0;
+}
+ol li {
+  list-style: none;
+}
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  &::marker {
+    content: "";
+  }
+}
+
+input {
+  font-size: 14px;
+}
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.confirm {
+  color: green;
+  font-size: 100px;
+  margin: 0 auto;
+}

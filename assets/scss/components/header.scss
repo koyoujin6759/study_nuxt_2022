@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.08);
+  &__logo {
+    padding: 20px 0;
+  }
+
+  &__inner {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    margin: 0 auto;
+  }
+
+  &__gnb {
+    display: flex;
+  }
+
+  &__link {
+    font-size: 18px;
+    padding: 30px 20px;
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+
+    &:hover {
+      color: #9a5cd8;
+      text-decoration: unset;
+    }
+
+    &.nuxt-link-exact-active {
+      color: #9a5cd8;
+    }
+  }
+}
