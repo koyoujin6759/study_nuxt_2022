@@ -39,26 +39,32 @@
     -->
     <section class="user">
       <div class="inner">
-        <p class="user__name">userName :</p>
-        <p class="user__age">userAge :</p>
+        <p class="user__name">userName : {{userName}}</p>
+        <p class="user__age">userAge : {{userAge}}</p>
         <hr />
         <h4>Object</h4>
         <!-- 객체 -->
-        <p class="user__name">userName :</p>
-        <p class="user__age">userAge :</p>
+        <p class="user__name">userName : {{userInfo.name}}</p>
+        <p class="user__age">userAge : {{userInfo.age}}</p>
         <!-- array -->
         <hr />
         <h4>array</h4>
-        <p class="user__name">userName :</p>
-        <p class="user__age">userAge :</p>
+        <p class="user__name">userName : {{userInfo["name"]}}</p>
+        <p class="user__age">userAge : {{userInfo["age"]}}</p>
         <!-- class -->
         <hr />
         <h4>class</h4>
-        <p class="user__name">userName :</p>
-        <p class="user__age">userAge :</p>
+        <p class="user__name">userName : {{user[0]}}</p>
+        <p class="user__age">userAge : {{user[1]}}</p>
         <!-- 그 외 -->
         <hr />
         <h4>그 외</h4>
+        <p class="user__name" :class="{active: userInfo.name === myUserInfo.name}">userName : {{userInfo.name}}</p>
+        <p class="user__age" :class="{active: userInfo.age === myUserInfo.age}">userName : {{userInfo.name}}</p>
+
+        <h4>그 외</h4>
+        <a :href="naver.link" :id="naver.id">{{naver.label}}페이지로가기</a>
+        <p :style="[{color: styleColor2, 'text-decoration':underline},aniStyle]">스타일인라인적용</p>
       </div>
     </section>
   </main>
@@ -66,22 +72,24 @@
 
 <script>
 const myUserInfo = {
-  name: "",
-  age: null,
+  name: "colin",
+  age: 3000,
 };
 
 export default {
-  components: {
-    },
+  components: {},
   data() {
     return {
-      userName: "kiki",
-      userAge: null,
+      //변수
+      userName: "youjin",
+      userAge: 5000,
+      //객체
       userInfo: {
-        name: "",
-        age: null,
+        name: "colin",
+        age: 3000,
       },
-      user: ["", null],
+      //배열
+      user: ["colin", 2000],
       myUserInfo: myUserInfo,
       naver: {
         link: "https://www.naver.com",
@@ -89,6 +97,7 @@ export default {
         id: "Naver",
       },
       styleColor: "orange",
+      styleColor2: "red",
       underline: "underline",
       aniStyle: {
         "padding-left": "20px",

@@ -1,13 +1,12 @@
 <template>
   <main>
+    <p class="confirm">OK</p>
   </main>
 </template>
 
 <script>
 export default {
-  components: {
-    
-  },
+  components: {},
 };
 </script>
 
