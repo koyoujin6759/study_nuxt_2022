@@ -4,15 +4,12 @@ section {
 
 .service {
   padding-bottom: 200px;
-  $title-color: red;
-  $padding:10px;
 
   &__title {
     font-size: 24px;
-    color: $title-color;
+    color: #333;
     //메인 제목 컬러
     letter-spacing: -0.54px;
-    padding:$padding;
   }
 }
 
@@ -21,30 +18,28 @@ section {
     display: flex;
     align-items: center;
     //선언된 Mixin을 사용(포함)하기 위해서는 @include가 필요합니다.
-    @include flex-center();
     gap: 20px;
 
     &__item {
       width: 100%;
       height: 300px;
-      @include height(300px);
       border-radius: 10px;
       box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
 
-      // &.cat {
-      //   background-image: url("~/assets/images/animal-cat.jpg");
-      // }
+      &.cat {
+        background-image: url("~/assets/images/animal-cat.jpg");
+      }
 
-      // &.dog {
-      //   background-image: url("~/assets/images/animal-dog.jpg");
-      // }
+      &.dog {
+        background-image: url("~/assets/images/animal-dog.jpg");
+      }
 
-      // &.rabbit {
-      //   background-image: url("~/assets/images/animal-rabbit.jpg");
-      // }
+      &.rabbit {
+        background-image: url("~/assets/images/animal-rabbit.jpg");
+      }
 
       /* 
       $변수: ()
@@ -58,12 +53,6 @@ section {
         반복 내용
       }
       */
-      $animals: ("cat", "dog", "rabbit");
-      @each $animal in $animals {
-        &.#{$animal} {
-          background-image: url("~/assets/images/animal-#{$animal}.jpg");
-        }
-      }
     }
   }
 }
@@ -102,18 +91,18 @@ section {
       }
 
       &:nth-child(1) {
-        // background-color: rgb(216, 226, 248);
-        // background-image: url("~/assets/images/content-1.png");
+        background-color: rgb(216, 226, 248);
+        background-image: url("~/assets/images/content-1.png");
       }
 
       &:nth-child(2) {
-        // background-color: rgb(224, 224, 247);
-        // background-image: url("~/assets/images/content-2.png");
+        background-color: rgb(224, 224, 247);
+        background-image: url("~/assets/images/content-2.png");
       }
 
       &:nth-child(3) {
-        // background-color: rgb(230, 241, 227);
-        // background-image: url("~/assets/images/content-3.png");
+        background-color: rgb(230, 241, 227);
+        background-image: url("~/assets/images/content-3.png");
       }
 
       /*
@@ -134,29 +123,12 @@ section {
       */
 
       // 1부터 3번 반복
-      @for $i from 1 through 3 {
-        &:nth-child(#{$i}) {
-          background-image: url("~/assets/images/content-#{$i}.png");
-        }
-      }
 
       // 1부터 3 직전까지만 반복(2번 반복)
-      @for $i from 1 to 3 {
-        &:nth-child(#{$i}) {
-          background-image: url("~/assets/images/content-#{$i}.png");
-        }
-      }
+
       /* 
       @each index값이 필요할 경우 내장 함수 문법 코드
       */
-      $colors: (rgb(216,226,248), rgb(224,224,247), rgb(230,241,227));
-      @each $color in $colors {
-        $i: index($colors, $color);
-        &:nth-child(#{$i}) {
-          background-color: $color;
-          background-image: url("~/assets/images/content-#{$i}.png");
-        }
-      }
     }
   }
 }

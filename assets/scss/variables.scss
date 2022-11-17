@@ -4,11 +4,11 @@
 
 $변수이름: 속성값;
 */
-$main-font-color: #333;
+
 /*
 다음과 같이 변수에 변수를 할당할 수 있습니다.
 */
-$main-font-color: #666;
+
 /*
 기본적인 Mixin 선언은 아주 간단합니다.
 @mixin 지시어를 이용하여 스타일을 정의합니다
@@ -19,14 +19,6 @@ $main-font-color: #666;
 
 Mixin은 선택자를 포함 가능하고 상위(부모) 요소 참조(& 같은)도 할 수 있습니다.
 */
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  
-  &__item {
-    width:100%;
-  };
-}
 
 /*
 Mixin은 함수(Functions)처럼 인수(Arguments)를 가질 수 있습니다.
@@ -40,6 +32,3 @@ Mixin은 함수(Functions)처럼 인수(Arguments)를 가질 수 있습니다.
 인수(argument)는 기본값(default value)을 가질 수 있습니다.
 
 */
-@mixin height($height:200px) {
-  height: $height;
-}

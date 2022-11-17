@@ -22,7 +22,7 @@
             >
           </li>
           <li class="header__gnb__item">
-            <router-link to="./main" class="header__link">상품소개</router-link>
+            <router-link to="./product" class="header__link">상품소개</router-link>
           </li>
           <li class="header__gnb__item">
             <router-link to="./main" class="header__link">커뮤니티</router-link>
