@@ -11,8 +11,10 @@
 </template>
 
 <script>
-import ClassItem from '@/components/ClassItem.vue'
+import ClassItem from '@/components/ClassItem.vue';
+import common from '@/mixin/common.js';
 export default {
+  mixin:[common],
   components: {
     ClassItem
   },
