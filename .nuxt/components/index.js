@@ -1,3 +1,4 @@
+export { default as ClassItem } from '../../components/ClassItem.vue'
 export { default as Footer } from '../../components/Footer.vue'
 export { default as Header } from '../../components/Header.vue'
 
