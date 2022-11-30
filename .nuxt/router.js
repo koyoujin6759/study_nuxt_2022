@@ -4,8 +4,11 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _215af01b = () => interopDefault(import('../pages/community/index.vue' /* webpackChunkName: "pages/community/index" */))
 const _a7c8b13e = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
 const _3150a1a7 = () => interopDefault(import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */))
+const _b1673c82 = () => interopDefault(import('../pages/community/axios.vue' /* webpackChunkName: "pages/community/axios" */))
+const _12f18ba4 = () => interopDefault(import('../pages/community/promise.vue' /* webpackChunkName: "pages/community/promise" */))
 const _637e0e09 = () => interopDefault(import('../pages/product/_id.vue' /* webpackChunkName: "pages/product/_id" */))
 const _44613b81 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -21,6 +24,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/community",
+    component: _215af01b,
+    name: "community"
+  }, {
     path: "/product",
     component: _a7c8b13e,
     name: "product"
@@ -28,6 +35,14 @@ export const routerOptions = {
     path: "/service",
     component: _3150a1a7,
     name: "service"
+  }, {
+    path: "/community/axios",
+    component: _b1673c82,
+    name: "community-axios"
+  }, {
+    path: "/community/promise",
+    component: _12f18ba4,
+    name: "community-promise"
   }, {
     path: "/product/:id",
     component: _637e0e09,
