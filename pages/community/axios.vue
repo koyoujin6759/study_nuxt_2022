@@ -40,11 +40,43 @@ export default {
     };
   },
   methods: {
-    getData() {},
-    deleteData(id) {},
-    newData() {},
-    changeData(id) {},
-    modifyTodo(index) {},
+    getData() {
+      this.$axios.$get("/todoList")
+      .then((response) => (this.todoList = response.map((item) => {
+          return {
+            ...item,
+            modify:false
+          };
+        }))
+      )
+    },
+    deleteData(id) {
+      this.$axios.$delete(`/todoList/${id}`)
+      .then((response) => this.getData());     
+    },
+    newData() {
+      let data = {
+        title: this.createTitle
+      };
+
+      this.$axios.$post(`/todoList`,data)
+      .then((response) => this.getData());
+
+      this.createTitle = null;
+    },
+    changeData(id) {
+      let data = {
+        title: this.modifyTitle,
+      }
+
+      this.$axios
+        .$put(`/todoList/${id}`, data)
+        .then((response) => this.getData())
+    },
+    modifyTodo(index) {
+      this.todoList[index].modify = true;
+      this.modifyTitle = this.todoList[index].title;
+    },
   },
   created() {
     this.getData();
