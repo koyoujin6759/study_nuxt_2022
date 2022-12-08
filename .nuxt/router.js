@@ -6,9 +6,11 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _215af01b = () => interopDefault(import('../pages/community/index.vue' /* webpackChunkName: "pages/community/index" */))
 const _a7c8b13e = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
+const _163f4596 = () => interopDefault(import('../pages/qna/index.vue' /* webpackChunkName: "pages/qna/index" */))
 const _3150a1a7 = () => interopDefault(import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */))
 const _b1673c82 = () => interopDefault(import('../pages/community/axios.vue' /* webpackChunkName: "pages/community/axios" */))
 const _12f18ba4 = () => interopDefault(import('../pages/community/promise.vue' /* webpackChunkName: "pages/community/promise" */))
+const _386ab06b = () => interopDefault(import('../pages/qna/create/index.vue' /* webpackChunkName: "pages/qna/create/index" */))
 const _637e0e09 = () => interopDefault(import('../pages/product/_id.vue' /* webpackChunkName: "pages/product/_id" */))
 const _44613b81 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -32,6 +34,10 @@ export const routerOptions = {
     component: _a7c8b13e,
     name: "product"
   }, {
+    path: "/qna",
+    component: _163f4596,
+    name: "qna"
+  }, {
     path: "/service",
     component: _3150a1a7,
     name: "service"
@@ -43,6 +49,10 @@ export const routerOptions = {
     path: "/community/promise",
     component: _12f18ba4,
     name: "community-promise"
+  }, {
+    path: "/qna/create",
+    component: _386ab06b,
+    name: "qna-create"
   }, {
     path: "/product/:id",
     component: _637e0e09,

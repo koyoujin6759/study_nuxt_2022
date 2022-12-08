@@ -1,6 +1,8 @@
+export { default as Child } from '../../components/Child.vue'
 export { default as ClassItem } from '../../components/ClassItem.vue'
 export { default as Footer } from '../../components/Footer.vue'
 export { default as Header } from '../../components/Header.vue'
+export { default as Parents } from '../../components/Parents.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

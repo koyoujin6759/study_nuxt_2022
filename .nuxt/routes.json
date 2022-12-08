@@ -3,42 +3,63 @@
     "name": "community",
     "path": "/community",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/community/index.vue",
-    "chunkName": "pages/community/index"
+    "chunkName": "pages/community/index",
+    "_name": "_215af01b"
   },
   {
     "name": "product",
     "path": "/product",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/product/index.vue",
-    "chunkName": "pages/product/index"
+    "chunkName": "pages/product/index",
+    "_name": "_a7c8b13e"
+  },
+  {
+    "name": "qna",
+    "path": "/qna",
+    "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/qna/index.vue",
+    "chunkName": "pages/qna/index",
+    "_name": "_163f4596"
   },
   {
     "name": "service",
     "path": "/service",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/service/index.vue",
-    "chunkName": "pages/service/index"
+    "chunkName": "pages/service/index",
+    "_name": "_3150a1a7"
   },
   {
     "name": "community-axios",
     "path": "/community/axios",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/community/axios.vue",
-    "chunkName": "pages/community/axios"
+    "chunkName": "pages/community/axios",
+    "_name": "_b1673c82"
   },
   {
     "name": "community-promise",
     "path": "/community/promise",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/community/promise.vue",
-    "chunkName": "pages/community/promise"
+    "chunkName": "pages/community/promise",
+    "_name": "_12f18ba4"
+  },
+  {
+    "name": "qna-create",
+    "path": "/qna/create",
+    "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/qna/create/index.vue",
+    "chunkName": "pages/qna/create/index",
+    "_name": "_386ab06b"
   },
   {
     "name": "product-id",
     "path": "/product/:id",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/product/_id.vue",
-    "chunkName": "pages/product/_id"
+    "chunkName": "pages/product/_id",
+    "_name": "_637e0e09"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_44613b81"
   }
 ]

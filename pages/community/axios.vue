@@ -41,18 +41,20 @@ export default {
   },
   methods: {
     getData() {
-      this.$axios.$get("/todoList")
-      .then((response) => (this.todoList = response.map((item) => {
+      this.sendGet("/todoList","",(response) => {
+        this.todoList = response.map((item) => {
           return {
             ...item,
-            modify:false
+            modify:false,
           };
-        }))
-      )
+        });
+      }, (response) => {
+        alert(response)
+      })
     },
     deleteData(id) {
-      this.$axios.$delete(`/todoList/${id}`)
-      .then((response) => this.getData());     
+      this.sendDelete(`/todoList/${id}`, 
+      (response) => this.getData());
     },
     newData() {
       let data = {

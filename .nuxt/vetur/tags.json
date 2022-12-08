@@ -1,4 +1,7 @@
 {
+  "Child": {
+    "description": "Auto imported from components/Child.vue"
+  },
   "ClassItem": {
     "description": "Auto imported from components/ClassItem.vue"
   },
@@ -7,5 +10,8 @@
   },
   "Header": {
     "description": "Auto imported from components/Header.vue"
+  },
+  "Parents": {
+    "description": "Auto imported from components/Parents.vue"
   }
 }
