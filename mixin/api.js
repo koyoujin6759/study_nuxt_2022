@@ -4,7 +4,7 @@ export default {
       relativeUrl,
       requestData,
       successFunction = null,
-      failureFunction = null 
+      failureFunction = null
     ) {
       this.$axios
         .$get(relativeUrl, {

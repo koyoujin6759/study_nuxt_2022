@@ -2,9 +2,6 @@
   "Child": {
     "description": "Auto imported from components/Child.vue"
   },
-  "Child2": {
-    "description": "Auto imported from components/Child2.vue"
-  },
   "ClassItem": {
     "description": "Auto imported from components/ClassItem.vue"
   },
@@ -16,8 +13,5 @@
   },
   "Parents": {
     "description": "Auto imported from components/Parents.vue"
-  },
-  "Parents2": {
-    "description": "Auto imported from components/Parents2.vue"
   }
 }

@@ -28,13 +28,6 @@
     "_name": "_3150a1a7"
   },
   {
-    "name": "slottest",
-    "path": "/slottest",
-    "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/slottest/index.vue",
-    "chunkName": "pages/slottest/index",
-    "_name": "_7356e374"
-  },
-  {
     "name": "community-axios",
     "path": "/community/axios",
     "component": "/Users/koyujin/Desktop/study_nuxt_2022/pages/community/axios.vue",
