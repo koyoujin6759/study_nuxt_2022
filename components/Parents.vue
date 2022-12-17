@@ -3,7 +3,7 @@
         <h2>타이틀1</h2>
         <hr/>
         <p>아이템1</p>
-        <slot name="item1"></slot>
+        <slot name="item1">ㅇㅇ</slot>
         <hr/>
         <p>아이템2</p>
         <slot name="item2"></slot>
@@ -41,7 +41,7 @@ export default {
             })
         },
         confirm() {
-            this.result(true);
+            this.resolve(true);
         },
         cancel() {
             this.btn = false;

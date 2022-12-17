@@ -30,6 +30,9 @@
           <li class="header__gnb__item">
             <router-link to="./qna" class="header__link">문의하기</router-link>
           </li>
+          <li class="header__gnb__item">
+            <router-link to="./slottest" class="header__link">slottest</router-link>
+          </li>
         </ul>
       </nav>
     </div>

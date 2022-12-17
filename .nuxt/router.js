@@ -8,6 +8,7 @@ const _215af01b = () => interopDefault(import('../pages/community/index.vue' /* 
 const _a7c8b13e = () => interopDefault(import('../pages/product/index.vue' /* webpackChunkName: "pages/product/index" */))
 const _163f4596 = () => interopDefault(import('../pages/qna/index.vue' /* webpackChunkName: "pages/qna/index" */))
 const _3150a1a7 = () => interopDefault(import('../pages/service/index.vue' /* webpackChunkName: "pages/service/index" */))
+const _7356e374 = () => interopDefault(import('../pages/slottest/index.vue' /* webpackChunkName: "pages/slottest/index" */))
 const _b1673c82 = () => interopDefault(import('../pages/community/axios.vue' /* webpackChunkName: "pages/community/axios" */))
 const _12f18ba4 = () => interopDefault(import('../pages/community/promise.vue' /* webpackChunkName: "pages/community/promise" */))
 const _386ab06b = () => interopDefault(import('../pages/qna/create/index.vue' /* webpackChunkName: "pages/qna/create/index" */))
@@ -41,6 +42,10 @@ export const routerOptions = {
     path: "/service",
     component: _3150a1a7,
     name: "service"
+  }, {
+    path: "/slottest",
+    component: _7356e374,
+    name: "slottest"
   }, {
     path: "/community/axios",
     component: _b1673c82,

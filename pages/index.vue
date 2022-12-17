@@ -6,6 +6,14 @@
     :key="item.i"
     :item="item"
     ></ClassItem>
+    <button @click="goPage('/product')">경로이동</button>
+    <button @click="goReplace('/product')">경로이동</button>
+    <hr>
+    <button @click="increaseCnt()">증가</button>
+    <div>
+      {{this.$store.state.count}}
+      {{count}}
+    </div>
     <!-- <ClassItem :name="'colin'" :msg="'hihi'"></ClassItem> -->
   </div>
 </template>
@@ -46,10 +54,30 @@ export default {
       ]
     }
   },
+  computed: {
+    count() {
+      return this.$store.getters.getIncreaseCount;
+    },
+  },
   watch: {
     inputValue() {
       console.log(this.inputValue)
     }
+  },
+  methods: {
+    goPage(url) {
+      this.$router.push({path:url, query: {id: 102}});
+    },
+    goReplace(url) {
+      this.$router.replace({path:url, query: {id: 102}});
+    },
+    increaseCnt() {
+      this.$store.commit("addCounter",10);
+    },
+
+  },
+  mounted() {
+    this.$store.dispatch("getCounter")
   }
 };
 </script>
